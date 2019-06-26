@@ -1,0 +1,9 @@
+---
+- hosts: planet-express
+
+  tasks: 
+  - name: "cowsay - install cowsay"
+    apt:
+     name: cowsay
+     state: present
+    become: true
