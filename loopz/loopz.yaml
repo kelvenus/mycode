@@ -1,0 +1,7 @@
+---
+- name: Learning Loops
+  hosts: localhost
+  gather_facts: no
+
+  task:
+  - name:
