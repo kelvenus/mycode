@@ -15,4 +15,5 @@ def planets():
     return render_template('planets.html', planetname = data)
 	
 if __name__ == '__main__':
-   app.run(port=5006, host='0.0.0.0')
+   #app.run(port=5006, host='0.0.0.0') add host ip to allow a particular host
+   app.run(port=5006)
