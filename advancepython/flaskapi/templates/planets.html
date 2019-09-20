@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <p><h1>Planets List from Starwars</h1></p>
+  <h1>  {{ username }} </h1>
+  <table class="w3-table w3-striped">
+    
+      <th>Planet Name</th>
+      <th>Climate</th>
+      <th>Gravity</th>
+      {% for item in  planetname %}
+    
+    <tr>
+	    <td>{{ item.name }} </td>
+	    <td>{{ item.climate }}</td>
+	    <td>{{ item.gravity }}</td>  
+
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+</body>
+</html>
+
